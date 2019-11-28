@@ -1,3 +1,53 @@
+* {
+  box-sizing: border-box; }
+
 body {
   background: #222629;
-  color: white; }
+  color: white;
+  font-family: 'Karla', sans-serif;
+  height: 100%;
+  margin: 0; }
+  body#bg-image {
+    background: url(/dist/images/background.png);
+    background-attachment: fixed;
+    background-size: cover; }
+
+main {
+  padding: 4rem;
+  height: 100%; }
+  main .theIcons {
+    margin-top: 1rem; }
+    main .theIcons a {
+      padding: 0.4rem; }
+      main .theIcons a:hover {
+        color: #86C232;
+        transition: all 0.7s ease-out; }
+  main#home {
+    overflow: hidden; }
+    main#home .lg-heading {
+      margin-top: 20vh; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+a {
+  color: #6B6E70;
+  text-decoration: none; }
+
+.text-third {
+  color: #86C232; }
+
+.bottom, .top {
+  margin: 0;
+  font-size: 6rem; }
+
+.sm-heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #6B6E70;
+  padding: 0.5rem 0.1rem; }
+
+.lg-heading {
+  margin: 0vw; }

@@ -1,45 +1,93 @@
 <!doctype html>
 <html lang="en">
-	<head>
+	<head >
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,
 		initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie-edge">
 
 		<title>SM.</title>
+		<script src="https://kit.fontawesome.com/f7c1897ff8.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="shortcut icon" href="images/SM.PNG" type="image/png">
 		<link href="https://fonts.googleapis.com/css?family=Anton|Karla|Monoton|Special+Elite|Happy+Monkey|Orbitron|Syncopate&display=swap" rel="stylesheet">
 	</head>
 
-	<body onload="Start()">
+	<body id="bg-image" onload="Start()">
+		<div class="overlay"></div>
+		<header>
 
-		<div class="header">
-			<table border="0">
-				<tr>
-					<td width="50%"> 
-						<button class="button1" onclick="reloadPage()">SM<span class="b">.</span></button>
-					</td>
-					<td align="right" valign="bottom" width="2000px">
-						<button class="button2" onclick="reloadPage()"><b>☰</b></button>
-					</td>
-				</tr>
-			</table>
-		</div>
-		
-		<div class="sizer">
-			<div class="a">
-				<br/><br/><b>Hello<span class="b">.</span> 
-				I'm Sammy<span id="underScore" class="b">_</span><br/></b>
+			<div class="burgerButton">
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
 			</div>
-			<br/><br/><br/><br/><br/>
-		</div>
+
+			<nav class="theMenu">
+				<div class="menuBranding"></div>
+
+				<ul>
+					<li class="nav-item">
+						<a href="/" class="nav-link">
+							Home
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="/about.html" class="nav-link">
+							About Me
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="/work.html" class="nav-link">
+							My Work
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="/contact.html" class="nav-link">
+							Contact Me
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+		</header>
+		
+		<main id="home">
+			<div class="lg-heading"></div>
+				<div class="top">
+					<b>Hello<span class="text-third">.</span> I'm
+				</div>
+				<div class="bottom">
+					Sammy<span id="underScore" class="text-third">_</span></b>
+				</div>
+			</div>
+			<div class="sm-heading">
+				Programmer, Web Developer & IT enthusiast.
+			</div>
+			<div class="theIcons">
+				
+				<a href="https://www.linkedin.com/in/samuel-micallef-626810183/">
+					<i class="fab fa-linkedin fa-2x" ></i>
+				</a>
+				<a href="https://github.com/Sammy-Dev">
+					<i class="fab fa-github fa-2x"></i>
+				</a>
+				<a href="https://twitter.com/sammymicallef">
+					 <i class="fab fa-twitter fa-2x"> </i>
+				</a>
+				<a href="https://www.instagram.com/sammy.micallef/">
+					<i class="fab fa-instagram fa-2x"> </i>
+				</a>
+
+			</div>
+			<br/>
+		</main>
 
 		<br/><br/><br/><br/>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 	</body>
 
 	<footer>
-		<script src="scripts/theScripts.js"></script>
+		<script src="js/main.js"></script>
 	</footer>
 </html>

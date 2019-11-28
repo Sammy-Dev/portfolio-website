@@ -1,10 +1,106 @@
-$primary-color: #222629;
-$secondary-color: white;
+$background-color:#222629;
+$primary-color:white;
+$secondary-color:#6B6E70;
+$third-color:#86C232;
+$show-home-image: true;
+$home-image: url(../dist/images/background.png);
+$background-opacity: 0.9;
 
+@mixin easeOut{
+    transition: all 0.7s ease-out;
+}
+
+@mixin background{
+    @if $show-home-image{
+        &#bg-image{ 
+            background: $home-image;
+            background-attachment: fixed;
+            background-size: cover;
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                right:0;
+                width: 100%;
+                height: 100%;
+
+            }
+        }
+    }
+}
+
+*{
+    box-sizing: border-box;
+}
 
 body{ 
-    background: $primary-color;
-    color: $secondary-color;
+    @include background;
+    background: $background-color;
+    color: $primary-color;
+    font-family: 'Karla', sans-serif;
+
+    height: 100%;
+    margin: 0;
     
 }
+
+main{
+    padding: 4rem;
+    height: 100%;
+
+    .theIcons{
+        margin-top: 1rem;
+
+        a{
+            padding: 0.4rem;
+
+            &:hover{
+                color: $third-color;
+                @include easeOut();
+                
+            }
+        }
+    }
+
+    &#home {
+        overflow: hidden;
+        .lg-heading{
+            margin-top: 20vh;
+        
+        }
+    }
+}
+
+header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+a{
+    color: $secondary-color;
+    text-decoration: none;
+}
+
+.text-third{
+    color: $third-color;
+}
+
+//headings
+.bottom,.top{
+    margin: 0;
+    font-size: 6rem;
+}
+
+.sm-heading{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: $secondary-color;
+    padding: 0.5rem 0.1rem;
+}
+
+.lg-heading{
+    margin: 0vw;
+}
+
 
