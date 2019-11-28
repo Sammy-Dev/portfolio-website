@@ -1,33 +1,12 @@
-$background-color:#222629;
+$background-color:#0e0f0f;
 $primary-color:white;
 $secondary-color:#6B6E70;
 $third-color:#86C232;
 $show-home-image: true;
-$home-image: url(../dist/images/background.png);
+$home-image: url(/dist/images/background.png);
 $background-opacity: 0.9;
-
-@mixin easeOut{
-    transition: all 0.7s ease-out;
-}
-
-@mixin background{
-    @if $show-home-image{
-        &#bg-image{ 
-            background: $home-image;
-            background-attachment: fixed;
-            background-size: cover;
-
-            .overlay {
-                position: absolute;
-                top: 0;
-                right:0;
-                width: 100%;
-                height: 100%;
-
-            }
-        }
-    }
-}
+@import "config";
+@import "menu";
 
 *{
     box-sizing: border-box;
@@ -51,13 +30,12 @@ main{
     .theIcons{
         margin-top: 1rem;
 
-        a{
+        a{ 
             padding: 0.4rem;
 
             &:hover{
                 color: $third-color;
-                @include easeOut();
-                
+                @include easeOut(); 
             }
         }
     }

@@ -1,8 +1,30 @@
+.burgerButton {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 0.7s ease-out; }
+  .burgerButton .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: white;
+    transition: all 0.7s ease-out; }
+  .burgerButton.close {
+    transform: rotate(180deg); }
+    .burgerButton.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .burgerButton.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .burgerButton.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(6.5px, -6.5px); }
+
 * {
   box-sizing: border-box; }
 
 body {
-  background: #222629;
+  background: #0e0f0f;
   color: white;
   font-family: 'Karla', sans-serif;
   height: 100%;
@@ -11,6 +33,15 @@ body {
     background: url(/dist/images/background.png);
     background-attachment: fixed;
     background-size: cover; }
+    body#bg-image:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 200%;
+      z-index: -1;
+      background: rgba(14, 15, 15, 0.9); }
 
 main {
   padding: 4rem;
