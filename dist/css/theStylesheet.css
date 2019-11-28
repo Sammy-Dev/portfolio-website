@@ -1,0 +1,103 @@
+.sizer{
+    font-size:35px;
+}
+
+body{
+    background-color: #222629;
+    margin: 0;
+}
+
+.a{
+    margin: auto;
+    width: 34%;
+    padding: 10px;
+
+    font-family: 'Karla', sans-serif;
+    font-size: 100px;
+    color: white;
+}
+
+.b{
+    color: #86C232;
+}
+
+.c{
+    margin: auto;
+    width: 4%;
+    height: 100%;
+    padding: 10px;
+    vertical-align: bottom  ;
+}
+
+
+.header{
+    padding: 10px;
+    font-family: 'Karla', sans-serif;
+    color:#6B6E70;
+    font-size: 35px;
+    position: fixed;
+}
+
+.button1{
+    border: none;
+    cursor: pointer;
+    font-size: 55px;
+    background-color: #222629;
+    color:#6B6E70;
+    font-family: 'Monoton', cursive;
+    transition: color 0.3s;
+}
+
+.button1:hover{
+    color: #86C232;
+}
+
+.button2{
+    border: none;
+    cursor: pointer;
+    font-size: 55px;
+    background-color: #222629;
+    font-family: 'Monoton', cursive;
+    color:#6B6E70;
+    transition: color 0.3s;
+}
+
+.button2:hover{
+    color: #86C232;
+}
+
+.button3{
+    
+    border: none;
+    cursor: pointer;
+    background-color: #222629;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    color: #6B6E70;
+    transition: color 0.3s;
+}
+
+.button3:hover{
+    color: #86C232;
+}
+
+.menuCanvas{
+    border: 1px solid white;
+}
+/* 
+.button2:hover{
+    border: none;
+    cursor: pointer;
+    font-size: 175px;
+    background-color: #222629;
+    color:#6B6E70;
+    font-family: 'Monoton', cursive;
+    animation-name: changer;
+    animation-duration: 0.25s;
+}
+
+
+@keyframes changer{
+    from {color:#6B6E70;}
+    to {color: #86C232;}
+  } */
