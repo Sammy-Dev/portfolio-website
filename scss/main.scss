@@ -1,10 +1,10 @@
-$background-color:#0e0f0f;
+$background-color:black;//#0e0f0f;
 $primary-color:white;
 $secondary-color:#6B6E70;
 $third-color:#86C232;
 $show-home-image: true;
 $home-image: url(/dist/images/background.png);
-$background-opacity: 0.9;
+$background-opacity: 0.8;
 @import "config";
 @import "menu";
 
@@ -17,35 +17,25 @@ body{
     background: $background-color;
     color: $primary-color;
     font-family: 'Karla', sans-serif;
-
-    height: 100%;
     margin: 0;
+    height: 100%;  
     
 }
 
-main{
-    padding: 4rem;
-    height: 100%;
-
-    .theIcons{
-        margin-top: 1rem;
-
-        a{ 
-            padding: 0.4rem;
-
-            &:hover{
-                color: $third-color;
-                @include easeOut(); 
-            }
-        }
-    }
-
-    &#home {
-        overflow: hidden;
+main
+{   
+    padding:28vh 5% 0;
+    .theMain{
+        //background: $background-color;
+        margin: 0 auto;
+        max-width: 363px;
         .lg-heading{
-            margin-top: 20vh;
-        
+          
         }
+        .sm-heading{
+          
+        }
+        
     }
 }
 
@@ -56,8 +46,13 @@ header{
 }
 
 a{
-    color: $secondary-color;
+    font-size: 3rem;
+    color: $primary-color;
     text-decoration: none;
+    &:hover{
+        color: $third-color;
+        @include easeOut();  
+    }
 }
 
 .text-third{
@@ -66,19 +61,29 @@ a{
 
 //headings
 .bottom,.top{
-    margin: 0;
-    font-size: 6rem;
+    font-size: 500%;
 }
 
 .sm-heading{
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
     color: $secondary-color;
     padding: 0.5rem 0.1rem;
 }
 
-.lg-heading{
-    margin: 0vw;
-}
+.theIcons{
+    margin-top: 1rem;
+    color: $secondary-color;
+    font-size: 1rem; 
+    a{ 
+        color: $secondary-color;
+            font-size: 1rem;
+        padding: 0.4rem;
 
+        &:hover{
+            color: $third-color;
+            @include easeOut();  
+        }
+    }
+}
 

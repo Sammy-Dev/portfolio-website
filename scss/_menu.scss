@@ -6,27 +6,77 @@
     top: 35px;
     cursor: pointer;
     @include easeOut;
-
+    
     .btn-line {
-        width: 28px;
-        height: 3px;
-        margin: 0 0 5px 0;
-        background: white;
-        @include easeOut;
+        width: 45px;
+        height: 6px;
+        margin: 0 0 7px 0;
+        background: $primary-color;
+        transition: background 0.2s;
+        
     }
+
+    &:hover{
+        .btn-line {
+            background: $third-color;
+        }
+    }
+
     //roatate burger into x
     &.close{
         transform: rotate(180deg);
         .btn-line{
             &:nth-child(1) {
-                transform: rotate(45deg) translate(5px, 5px);
+                transform: rotate(45deg) translate(5.5px, 5.5px);
             }
             &:nth-child(2) {
                 opacity: 0;
             }
             &:nth-child(3) {
-                transform: rotate(-45deg) translate(6.5px, -6.5px);
+                transform: rotate(135deg) translate(-13px, 13px);
             }
         }
     }
+}
+
+//create overlay
+.theMenu {
+    position: fixed;
+    top:0;
+    width: 100%;
+    opacity: 1;
+    visibility: hidden;
+    font-family: 'Medula One', cursive;
+    
+
+    &.show{
+        visibility: visible;
+    }   
+
+    background:$background-color;
+
+    transform:translate3d(0, -100%,0);
+    @include easeOut;
+
+    &.show{
+        transform: translate3d(0,0,0);
+        transition: all 1s;
+    }
+
+    .menu-nav{
+        padding:28vh 5% 0;
+        height: 100vh;
+        margin: 0 auto;
+        
+        max-width: 600px;
+        
+        overflow: hidden;
+    
+        list-style: none;
+        
+    }
+}
+
+.nav-link{
+    font-size: 500%;
 }
