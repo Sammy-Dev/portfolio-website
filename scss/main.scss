@@ -3,7 +3,7 @@ $primary-color:white;
 $secondary-color:#6B6E70;
 $third-color:#86C232;
 $show-home-image: true;
-$home-image: url(/dist/images/background.png);
+$home-image: url(/PortfolioWebsite/dist/images/background.png);
 $background-opacity: 0.8;
 @import "config";
 @import "menu";
@@ -24,25 +24,25 @@ body{
 
 main
 {   
-    padding:28vh 5% 0;
+    z-index: 1;
+    padding:22vh 5% 0;
     .theMain{
         //background: $background-color;
         margin: 0 auto;
-        max-width: 363px;
-        .lg-heading{
-          
-        }
-        .sm-heading{
-          
-        }
-        
+        width: 365px;
     }
 }
 
 header{
     position: fixed;
-    z-index: 2;
     width: 100%;
+    .burgerButton{
+        z-index: 2;
+    }
+
+    .theMenu{
+        z-index: -1;
+    }
 }
 
 a{
@@ -65,7 +65,7 @@ a{
 }
 
 .sm-heading{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
     color: $secondary-color;
     padding: 0.5rem 0.1rem;
@@ -77,7 +77,7 @@ a{
     font-size: 1rem; 
     a{ 
         color: $secondary-color;
-            font-size: 1rem;
+        font-size: 1rem;
         padding: 0.4rem;
 
         &:hover{
@@ -87,3 +87,172 @@ a{
     }
 }
 
+.main-footer{
+    color: $secondary-color;
+    padding:8vh 0 0;
+    font-size: .8rem;
+    //position: absolute;     
+    //text-align: bottom;    
+    //bottom: 0px; 
+    max-width: 700px;
+    margin: 0 auto;
+   
+}
+
+.about-info{
+    font-size: 150%;
+    max-width : 700px;
+    color : $primary-color;
+    margin: 0 auto;
+    padding:2vh 0 0;
+}
+
+.about-heading{
+    font-size: 500%;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.about{
+    min-height: 100vh; 
+    position: relative;
+}
+
+.theTable{
+    border: solid 1px $third-color;
+}
+
+.notA{
+    .fa-phone-alt{
+        color: $third-color;
+    }
+    .fa-envelope{
+        color: $third-color;
+    }
+    font-size: 1.5rem;
+}
+
+.smallSpace{
+    font-size: 0.5rem;
+}
+
+textarea{
+    width:160px; height:100px;
+}
+
+td{
+    vertical-align: top;
+}
+
+input[type=text], textarea{
+    padding: 12px;
+    border: 1px solid $secondary-color;
+    border-radius: 6px;
+    width: 100%;
+    resize: vertical;
+    margin-top: 5px; 
+    margin-bottom: 15px;
+    background: $background-color;
+    color:$primary-color;
+}
+
+.formContainerA{
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid $third-color;
+}
+
+.formContainerB{
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+
+.required{
+    color: red;
+}
+
+.larger{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+input[type=submit] {
+    background-color: $background-color;
+    color: $third-color;
+    padding: 12px;
+    border: 1px solid $primary-color;
+    border-radius: 4px;
+    font-size: 1.25rem; 
+    cursor: pointer;
+}
+
+.resumeContainer{
+    border-radius: 1px;
+    //padding: 20px;
+    background: white;
+    color: black;
+    font-family:  Calibri, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    i{
+        color: #57326e;
+    }
+
+    .resumeTop{
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top:6rem;
+        padding-bottom: 0.5rem;
+        background: #e8e8e8;
+    }
+    .resumeBottom{
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top:3rem;
+        padding-bottom: 6rem;
+        .EXP{
+            font-size: 1.5rem;
+        }
+        .EXPinfo{
+            padding-left: 3.3rem; 
+            ul li::before {
+                content: "\2022";
+                color: #57326e;
+                font-weight: bold;
+                display: inline-block; 
+                width: 1em;
+                margin-left: -1em;
+              }
+        }
+        .EXPinfo1{
+            padding-left: 3rem; 
+        }
+    }
+
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .item1 { grid-area: 1 ; }
+    .item2 { grid-area: 2; }
+  }
+
+  .item2{
+    text-align: right;
+  }
+
+  .purp{
+    color: #57326e;
+  }
+
+  .text-third1{
+    color: $third-color;
+    font-size: 1.5rem;
+  }

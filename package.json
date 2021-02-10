@@ -7,7 +7,7 @@
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "author": "Samuel Micallef",
-  "license": "MIT",
+  "license": "",
   "dependencies": {
     "node-sass": "^4.13.0"
   }

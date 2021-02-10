@@ -1,5 +1,5 @@
 @mixin easeOut{
-    transition: all 0.2s ease-out;
+   transition: all 0.2s ease-out;
 }
 
 @mixin background{
@@ -8,17 +8,17 @@
             background: $home-image;
             background-attachment: fixed;
             background-size: cover;
+            z-index:-1;
 
             &:after  {
                 content:'';
-                position: absolute ;
+                position: fixed ;
                 top: 0;
                 right:0;
                 width: 100%;
-                height: 100%;
+                height: 100vh;
                 z-index:-1;
                 background: rgba($background-color, $background-opacity);
-
             }
         }
     }

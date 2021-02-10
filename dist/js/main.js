@@ -25,8 +25,6 @@ function toggleMenu(){
     }
 }
 
-
-
 ///////////////////////////////////////
 var Clock;
 var i = 1;
@@ -45,13 +43,11 @@ function Animation(){
     }
 } 
 
-/* function Animation(){
-    if(i == 0){
-        document.getElementById("underScore").style.color = "#86C232";
-        i++;
-    }else if(i == 1){
-        document.getElementById("underScore").style.color = "#0e0f0f";
-        i--;
-    }
+
+/* function maxHeight(){
+    var theElement = document.getElementById("bg-image");
+    var Height = document.documentElement.scrollHeight + "px";
+    theElement.style.height = Height;
 } */
+
 

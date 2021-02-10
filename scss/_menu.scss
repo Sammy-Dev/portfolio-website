@@ -1,7 +1,7 @@
 //menu button
 .burgerButton {
     position: absolute;
-    z-index: 3;
+    //z-index: 3;
     right: 35px;
     top: 35px;
     cursor: pointer;
@@ -13,7 +13,6 @@
         margin: 0 0 7px 0;
         background: $primary-color;
         transition: background 0.2s;
-        
     }
 
     &:hover{
@@ -45,9 +44,9 @@
     top:0;
     width: 100%;
     opacity: 1;
+    
     visibility: hidden;
     font-family: 'Medula One', cursive;
-    
 
     &.show{
         visibility: visible;
@@ -64,16 +63,12 @@
     }
 
     .menu-nav{
-        padding:28vh 5% 0;
-        height: 100vh;
+        padding:20vh 5% 0;
+        min-height: 100vh;
         margin: 0 auto;
-        
         max-width: 600px;
-        
-        overflow: hidden;
-    
+        //overflow: auto;
         list-style: none;
-        
     }
 }
 
